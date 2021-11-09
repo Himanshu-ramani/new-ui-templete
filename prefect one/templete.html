@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width = device-width" />
+    <link rel="stylesheet" href="./templete.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>RESUME / TEMPLETE</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="check-feild">
+     <div> 
+       <span id="close">X</span>
+       <h3>PERSONAL</h3>
+      <input type="checkbox" checked id="addressB" onclick="checkedfeild()">  <i class="fa fa-map-marker" aria-hidden="true"> &nbsp;&nbsp; </i><label for="">Address</label> <br>
+      <input type="checkbox" checked  id="Email-check" onclick="checkedfeild()">  <i class="fa fa-envelope" aria-hidden="true"></i> <label for="">E-mail</label> <br>
+      <input type="checkbox" checked  id="number-check" onclick="checkedfeild()">  <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; <label for="">Phone Number</label> <br>
+     </div>
+      <div class="social">
+        <h3>SOCIAL</h3>
+      <input type="checkbox" id="website-check" onclick="checkedfeild()"> <label for="website-check">Website</label> <br>
+      <input type="checkbox" id="twitter-check" onclick="checkedfeild()"> <label for="twitter-check">Twitter</label> <br>
+      <input type="checkbox" id="linkedin-check" onclick="checkedfeild()"> <label for="linkedin-check">linkedin</label> <br>
+      <input type="checkbox" id="github-check" onclick="checkedfeild()"> <label for="github-check">Github</label> <br>
+      <input type="checkbox" id="facebook-check" onclick="checkedfeild()"> <label for="facebook-check">Facebook</label> <br>
+      <input type="checkbox" id="instagram-check" onclick="checkedfeild()"> <label for="instagram-check">Instagram</label> <br>
+      </div>
+    </div>
+    <div class="page">
+      <header>
+        <label for="filefeild">  <img class="img" src="./profile.jpg" alt="" srcset="" id="img-f" /></label>
+        <input type="file" name="" id="filefeild" class="file">
+        <div class="name">
+          <h1 class='bigname' id="bigname"><input type="text" class="bigname"  placeholder="NAME" name="" id=""></h1>
+          <h3 class='bignamepost'><input type="text" placeholder="Post" class="post"></h3>
+        </div>
+      </header>
+      <div class="info">
+        <section class="first">
+          <div class="profile">
+            <h1 class="heading">PERSONAL PROFILE</h1>
+            <div class="underline"></div>
+            <p class='aboutp'>
+              <textarea name="" spellcheck="false" placeholder="About yourself" class="about" id="" cols="30" rows="2"></textarea>
+            </p>
+          </div>
+          <div class="contact">
+            <h1 class="heading">CONTACT</h1>
+            <div class="underline"></div>
+            <p id="addressp">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;&nbsp;
+              <textarea name="" class="address" placeholder="Address" id="addressC" cols="" rows="1"></textarea>
+            </p>
+            <p id='emailp'>
+           <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;
+              <input type="text" placeholder="E-mail" class="email" id="emailC">
+            </p>
+            <p id='numberp'>
+           <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;&nbsp;
+              <input type="number" name="" placeholder="Ph. Number" class="number" id="numberC">
+            </p>
+            <p id='websitep' style="display: none;">
+              <i class="fa fa-globe" aria-hidden="true"></i> &nbsp;&nbsp;
+                 <input type="text" name="" placeholder="Website" class="number" id="websiteC">
+               </p>
+               <p id='twitterp' style="display: none;">
+                <i class="fa fa-twitter" aria-hidden="true"></i> &nbsp;&nbsp;
+                   <input type="text" name="" placeholder="Twitter" class="number" id="twitterC">
+                 </p>
+                 <p id='githubp'style="display: none;">
+                  <i class="fa fa-github" aria-hidden="true"></i> &nbsp;&nbsp;
+                     <input type="text" name="" placeholder="Github" class="number" id="githubC">
+                   </p>
+                   <p id='facebookp'style="display: none;">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> &nbsp;&nbsp;
+                       <input type="text" name="" placeholder="Facebook" class="number" id="facebookC">
+                     </p>
+                     <p id='instagramp' style="display: none;">
+                      <i class="fa fa-instagram" aria-hidden="true"></i> &nbsp;&nbsp;
+                         <input type="text" name="" placeholder="Instagram" class="number" id="instagramC">
+                       </p>
+           
+           
+            <p id="linkedinp" style="display: none;">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              &nbsp;&nbsp;
+              
+                <input type="text" class="linkedin" placeholder="Linked in" name="" id=""></a
+              >
+            </p>
+           <button id="add-more">Add more</button>
+          </div>
+          <h1 class="heading">EDUCATION</h1>
+          <div class="underline"></div>
+          <div class="eduction">
+            <p class='edit'>
+              <i class="fa fa-institution" aria-hidden="true"></i
+              >&nbsp;&nbsp;<input type="text" placeholder="University" name="" class="collage" id="">
+            </p>
+            <p>
+              <i class="fa fa-mortar-board" aria-hidden="true"></i
+              >&nbsp;&nbsp;<input type="text" class="collage" placeholder="Degree" name="" id="">
+            </p>
+          </div>
+        </section>
+        <section class="second">
+          <div class="skill">
+            <h1 class="heading">SKILLS</h1> 
+            <div class="underline"></div>
+           
+            <ul id="skill-container">
+              <li class="skilldes"><textarea name="" id="" class="skills" cols="38" rows="1" placeholder="Skill"></textarea>  <button class="skill-btn-add" onclick="addli()" >+</button> <button class="subskill" onclick="subli()">-</button></li>
+            </ul>
+          </div>
+          <h1 class="heading">WORK EXPERINCE</h1>
+            <div class="underline"></div>
+            <button id="btn-exp">+</button>
+          <div class="experince" id="exp-cont">
+            <h2 class='edit'><input type="text"   placeholder="compnay"  name="" class="compnay"  > <span class=" edit"> <input type="text"  placeholder="post" name="" class="comp-post"></span></h2>
+            <p class="date edit"><input type="text" placeholder="Duration"></p>
+            <button id="btn-exp" onclick="exp()">+</button>
+            <ul class="exp-container">
+              <li><textarea name="" id="" placeholder="Work Experince" cols="43" rows="1" class="skills"></textarea><button>-</button> </li>
+             
+            </ul>
+            
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="pdf-c">
+    <a href="#" id="pdf-btn"  rel="noopener noreferrer">Save PDF</a>
+    </div>
+    <script src="./resume.js"></script>
+  </body>
+</html>
